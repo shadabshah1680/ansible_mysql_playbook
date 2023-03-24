@@ -1,4 +1,4 @@
 [dbservers]
-remote-server-public-or-private-ip
+clients-ip
 [all:children]
 dbservers
