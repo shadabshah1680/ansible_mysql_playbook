@@ -1,0 +1,17 @@
+- name: Verify apache installation
+  remote_user: ubuntu
+  hosts: dbservers
+  become: true
+  vars:
+    services:
+      - mysql-server
+  tasks:
+    - name: Install random services
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items: "{{ services }}"
+    - name: Start mysql service
+      systemd:
+        name: mysql
+        state: started
