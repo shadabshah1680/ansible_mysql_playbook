@@ -34,6 +34,12 @@ OR
 
 ansible-galaxy init webrole
 ```
+# Setup hosts
+- Set public_key of ansible server in authorized key of client nodes to make sure that ssh connection is authorized
+- Change the ip in attached hosts file 
+    - client-server-ip1
+    - client-server-ip2
+- You can add more ips  and [servers] labels to categorized the number of server accordingly
 # Check Status
 ```
 ansible-playbook  -i hosts mysql_playbook.yaml --check
@@ -42,3 +48,4 @@ ansible-playbook  -i hosts mysql_playbook.yaml --check
 ```
 ansible-playbook  -i hosts mysql_playbook.yaml 
 ```
+ 

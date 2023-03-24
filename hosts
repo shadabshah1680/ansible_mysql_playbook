@@ -1,4 +1,5 @@
 [dbservers]
-clients-ip
+client-server-ip1
+client-server-ip2
 [all:children]
 dbservers
