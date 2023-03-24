@@ -28,11 +28,11 @@ fi
 - In case ID_LIKE not working use `#ID_LIKE=$(cat /etc/os-release | grep ID_LIKE | cut -d"=" -f2) #hard_code`
 # Create Roles
 ```
-ansible-galaxy init --offline -f webrole
+mkdir roles && cd roles && ansible-galaxy init --offline -f mysql.role
 
 OR
 
-ansible-galaxy init webrole
+ansible-galaxy init mysql.role
 ```
 # Setup hosts
 - Set public_key of ansible server in authorized key of client nodes to make sure that ssh connection is authorized
@@ -42,10 +42,10 @@ ansible-galaxy init webrole
 - You can add more ips  and [servers] labels to categorized the number of server accordingly
 # Check Status
 ```
-ansible-playbook  -i hosts mysql_playbook.yaml --check
+ansible-playbook  -i hosts dev_mysql_playbook.yaml --check
 ```
 # Deploy Service
 ```
-ansible-playbook  -i hosts mysql_playbook.yaml 
+ansible-playbook  -i hosts dev_mysql_playbook.yaml 
 ```
  
