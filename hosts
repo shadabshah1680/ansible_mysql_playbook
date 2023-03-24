@@ -1,4 +1,4 @@
 [dbservers]
-ec2-54-242-209-91.compute-1.amazonaws.com
+remote-server-public-or-private-ip
 [all:children]
 dbservers
