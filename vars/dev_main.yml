@@ -1,0 +1,8 @@
+mysql_root_password: "password123"
+mysql_databases:
+  - name: dbserver
+mysql_users:
+  - name: dbuser
+    host: "%"
+    password: password123
+    priv: "dbserver.*:ALL"
