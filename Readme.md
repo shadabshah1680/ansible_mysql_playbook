@@ -8,7 +8,7 @@ if [[ "$ID_LIKE" == "debian" ]]; then
     sudo apt update -y
     sudo apt-add-repository ppa:ansible/ansible
     sudo apt install ansible -y
-elif [[ "$ID_LIKE" == "centos" || "$ID_LIKE" == "rhel" ]]; then
+elif [[ "$ID_LIKE" == "rhel fedora" || "$ID_LIKE" == "rhel" ]]; then
     echo "Detected YUM package manager..."
     sudo yum update -y
     sudo yum install epel-release -y
