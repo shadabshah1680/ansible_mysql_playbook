@@ -1,8 +1,6 @@
 [dev-dbservers]
-server-ip
-
+localhost
 [prod-dbservers]
-server-ip
-
+localhost
 [all:children]
 dev-dbservers

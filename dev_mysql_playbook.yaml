@@ -3,8 +3,6 @@
   hosts: 
     - dev-dbservers
   become: true
-  vars_files:
-    - vars/dev_main.yml
   roles:
-    - role: mysql.role
+    - role: mysql
       become: yes
