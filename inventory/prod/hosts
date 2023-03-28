@@ -1,6 +1,6 @@
-[dev-dbservers]
-localhost
 [prod-dbservers]
 localhost
+
+
 [all:children]
-dev-dbservers
+prod-dbservers
