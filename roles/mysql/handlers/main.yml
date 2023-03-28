@@ -1,7 +1,6 @@
 ---
-# handlers file for mysql
 - name: restart mysql
   ansible.builtin.service:
     name: "{{ mysql_daemon }}"
     state: restarted
-    sleep: 5
+  ignore_errors: true
