@@ -1,0 +1,7 @@
+- name: Verify apache installation
+  remote_user: ubuntu
+  hosts: 
+    - dev-dbservers
+  become: true
+  roles:
+    - role: mysql

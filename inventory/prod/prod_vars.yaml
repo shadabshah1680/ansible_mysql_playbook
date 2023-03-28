@@ -1,8 +1,1 @@
-- name: Verify apache installation
-  remote_user: ubuntu
-  hosts: 
-    - prod-dbservers
-  become: true
-  roles:
-    - role: ../../mysql
-      become: yes
+mysql_daemon: mysql
