@@ -1,4 +1,4 @@
-- name: Verify apache installation
+- name: Verify mysql installation
   remote_user: ubuntu
   hosts: 
     - prod-dbservers
