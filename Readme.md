@@ -49,10 +49,10 @@ ansible-galaxy init mysql.role
 ```
 # Setup hosts
 - Set public_key of ansible server in authorized key of client nodes to make sure that ssh connection is authorized
-- Change the ip in attached hosts file 
+- Change the ip in inventory file 
     - client-server-ip1
     - client-server-ip2
-- You can add more ips  and [servers] labels to categorized the number of server accordingly
+- You can add more ips  in a servers group and labels to categorized the number of servers group accordingly
 # Check Status
 ```
 ansible-playbook -i inventory  dev-playbook.yml  --check
