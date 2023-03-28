@@ -1,0 +1,15 @@
+[dev-dbservers]
+ec2-18-208-177-254.compute-1.amazonaws.com
+[dev-webservers]
+ec2-18-208-177-254.compute-1.amazonaws.com
+
+[prod-dbservers]
+ec2-18-208-177-254.compute-1.amazonaws.com
+[prod-webservers]
+ec2-18-208-177-254.compute-1.amazonaws.com
+
+[all:children]
+dev-dbservers
+dev-webservers
+prod-dbservers
+prod-webservers

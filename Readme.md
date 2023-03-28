@@ -42,10 +42,10 @@ ansible-galaxy init mysql.role
 - You can add more ips  and [servers] labels to categorized the number of server accordingly
 # Check Status
 ```
-ansible-playbook -i inventory/dev  dev-playbook.yml  --check
+ansible-playbook -i inventory  dev-playbook.yml  --check
 ```
 # Deploy Service
 ```
-ansible-playbook  -i hosts dev_mysql_playbook.yaml 
+ansible-playbook -i inventory  dev-playbook.yml
 ```
  

@@ -1,6 +1,0 @@
-[prod-dbservers]
-localhost
-
-
-[all:children]
-prod-dbservers
