@@ -27,6 +27,7 @@ fi
 - [ubuntu| https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-20-04#step-1-installing-ansible]
 - In case ID_LIKE not working use `#ID_LIKE=$(cat /etc/os-release | grep ID_LIKE | cut -d"=" -f2) #hard_code`
 #  Ansible client Nodes Prerquisite
+> Need to setup ssh connection between ansible node and client nodes
 - Generate key using `ssh-keygen` in ansible server
 - put `id_rsa.pub` in client nodes authorized_keys
 ## Sample User Data Script
